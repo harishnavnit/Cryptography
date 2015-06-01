@@ -26,9 +26,9 @@ def check_sanity(plain_text, m) :
 	return (plain_text == m);
 
 def main() :
-	(p, q, e, m) = get_values();
-	n		= p * q;				print "N = ".format(n);
-	pi_n	= (p-1) * (q-1);		# Euler totient function
+	(p, q, e, m)= get_values();
+	n		    = p * q;				print "N = ".format(n);
+	pi_n	    = (p-1) * (q-1);		# Euler totient function
 
 	(encryptedText, private_key)= encrypt_text(n, pi_n, m, e);
 	decryptedText				= decrypt_text(encryptedText, private_key, n);
